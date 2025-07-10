@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.font-nunito {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@theme {
+  --color-primary: #388da8;
+  --color-primary-lite: #388ea810;
+  --color-secondary: #3e5055;
+  --color-secondary-lite: #3e5055ce;
+  --color-primary-text: #0dcaf0;
+  --font-nunito: "Nunito";
+  --shadow-card: 0 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#pricing,
+#dropdown {
+  scroll-margin-top: 90px;
+}
+
+#contact {
+  scroll-margin-top: 50px;
+}
+
+#services,
+#features,
+#about {
+  scroll-margin-top: 120px;
+}
+
+button {
+  cursor: pointer;
+}
