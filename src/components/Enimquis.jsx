@@ -26,13 +26,13 @@ function Enimquis() {
           </p>
 
           {/* Features List */}
-          <div className="grid sm:grid-cols-2 gap-4 mt-6">
+          <div className="grid sm:grid-cols-2 gap-2 sm:gap-4 mt-6">
             {enimquisdata.map((item, index) => (
               <div
                 key={index}
                 data-aos="fade-up"
                 data-aos-delay={index * 50}
-                className="flex items-start py-4 bg-white rounded-lg"
+                className="flex items-start py-2 sm:py-4 bg-white rounded-lg"
               >
                 <div className="text-primary text-2xl mt-2 mr-4">
                   {item.icon}
