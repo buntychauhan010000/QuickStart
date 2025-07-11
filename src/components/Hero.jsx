@@ -7,7 +7,6 @@ import NavBar from "./NavBar";
 function Hero() {
   return (
     <div
-      data-aos="fade-up"
       style={{ backgroundImage: `url(${bgimg})` }}
       className="relative sm:min-h-screen overflow-hidden bg-cover bg-no-repeat bg-bottom"
     >

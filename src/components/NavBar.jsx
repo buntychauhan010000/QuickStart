@@ -20,10 +20,17 @@ function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close menu on link click (for mobile)
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       {/* Fixed Navbar */}
       <div
+        data-aos="zoom-in"
+        data-aos-duration="500"
         className={`fixed top-0 left-0 w-full bg-white z-50 transition-all duration-300 ${
           hasShadow ? "shadow-md" : ""
         }`}
@@ -75,17 +82,21 @@ function NavBar() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-40 bg-gray-300 bg-opacity-20 flex justify-center items-start pt-28">
-          <div className="bg-white w-[95vw] h-[88vh] rounded-lg shadow-lg p-8 overflow-y-auto flex flex-col">
+          <div className="bg-white w-full max-w-sm  h-[88vh] rounded-lg shadow-lg p-8 overflow-y-auto flex flex-col">
             <ul className="flex flex-col gap-6 text-lg items-start">
               {navlinks.map((link, index) => (
                 <li key={index}>
-                  <a href={link.href} className="hover:text-primary">
+                  <a
+                    href={link.href}
+                    className="hover:text-primary"
+                    onClick={handleLinkClick}
+                  >
                     {link.name}
                   </a>
                 </li>
               ))}
               <li>
-                <PrimaryButton label="Get Started" />
+                <PrimaryButton label="Get Started" onClick={handleLinkClick} />
               </li>
             </ul>
           </div>

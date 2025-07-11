@@ -8,12 +8,16 @@ function Corporis() {
       {/* Two-column layout: Image + Content */}
       <div className="md:flex justify-between items-center gap-8">
         {/* Left: Mobile Image */}
-        <div className="md:w-1/2">
+        <div data-aos="fade-right" data-aos-delay="200" className="md:w-1/2">
           <img className="rounded-2xl" src={mobile} alt="Mobile Preview" />
         </div>
 
         {/* Right: Text and Button */}
-        <article className="md:w-1/2 xl:w-2/5 p-7 xl:pr-20 bg-primary-lite text-center md:text-left mt-6">
+        <article
+          data-aos="fade-left"
+          data-aos-delay="400"
+          className="md:w-1/2 xl:w-2/5 p-7 xl:pr-20 bg-primary-lite text-center md:text-left mt-6"
+        >
           <p className="text-secondary text-lg sm:text-2xl font-bold mb-4">
             Corporis temporibus maiores provident
           </p>

@@ -23,6 +23,8 @@ function Services() {
           {servicesdata.map((item, index) => (
             <article
               key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
               className="flex items-start gap-5 p-3 sm:p-6 border border-gray-200 hover:shadow-card transition-shadow duration-300 rounded-lg bg-white"
             >
               {/* Icon */}

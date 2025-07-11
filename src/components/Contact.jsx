@@ -17,7 +17,11 @@ function Contact() {
       {/* Contact Info Cards */}
       <div className="lg:flex justify-between items-center gap-5">
         {/* Address Card */}
-        <div className="lg:w-1/2 shadow-card shadow-gray-300 px-5 py-8 my-4 lg:my-0 flex flex-col gap-4 items-center">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="lg:w-1/2 shadow-card shadow-gray-300 px-5 py-8 my-4 lg:my-0 flex flex-col gap-4 items-center"
+        >
           <span className="border-dashed border-2 border-primary p-5 w-fit rounded-full">
             <BsGeoAlt className="text-primary text-2xl" />
           </span>
@@ -30,7 +34,11 @@ function Contact() {
         {/* Phone & Email Cards */}
         <div className="lg:w-1/2 flex flex-col sm:flex-row gap-5">
           {/* Phone Card */}
-          <div className="flex flex-col gap-4 items-center w-full shadow-card shadow-gray-300 px-5 py-8">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="110"
+            className="flex flex-col gap-4 items-center w-full shadow-card shadow-gray-300 px-5 py-8"
+          >
             <span className="border-dashed border-2 border-primary p-5 w-fit rounded-full">
               <BsTelephone className="text-primary text-2xl" />
             </span>
@@ -39,7 +47,11 @@ function Contact() {
           </div>
 
           {/* Email Card */}
-          <div className="flex flex-col gap-4 items-center w-full shadow-card shadow-gray-300 px-5 py-8">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="110"
+            className="flex flex-col gap-4 items-center w-full shadow-card shadow-gray-300 px-5 py-8"
+          >
             <span className="border-dashed border-2 border-primary p-5 w-fit rounded-full">
               <BsEnvelope className="text-primary text-2xl" />
             </span>
@@ -50,7 +62,11 @@ function Contact() {
       </div>
 
       {/* Map & Contact Form */}
-      <div className="flex gap-5 justify-between items-center flex-col lg:flex-row mt-10">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className="flex gap-5 justify-between items-center flex-col lg:flex-row mt-10"
+      >
         {/* Google Map */}
         <div className="w-full lg:w-1/2 shadow-card shadow-gray-300">
           <iframe

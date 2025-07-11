@@ -17,25 +17,26 @@ import Frequently from "./components/Frequently";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Aos.init({ duration: 1000, once: true });
+    Aos.init({ duration: 500, once: true });
 
     // Simulate loading time
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // Adjust this time as needed
+    }, 1000); // Adjust this time as needed
 
     return () => clearTimeout(timer);
   }, []);
 
   if (loading) {
     return (
-      <div className="w-screen h-screen flex justify-center items-center bg-white">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-black-500 border-solid"></div>
+      <div className="w-screen h-screen flex justify-center items-center bg-white overflow-hidden">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-primary border-solid"></div>
       </div>
     );
   }
@@ -56,6 +57,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
+      {/* <ScrollToTopButton /> */}
     </>
   );
 }

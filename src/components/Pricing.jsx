@@ -7,11 +7,23 @@ function Pricing() {
   return (
     <div id="pricing" className="container mx-auto px-4 py-8">
       {/* Section Header */}
-      <h2 className="text-3xl font-bold font-nunito text-center text-secondary">
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className="text-3xl font-bold font-nunito text-center text-secondary"
+      >
         Pricing
       </h2>
-      <div className="w-12 h-1 bg-primary mx-auto my-3" />
-      <p className="text-center text-secondary mb-10">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className="w-12 h-1 bg-primary mx-auto my-3"
+      />
+      <p
+        data-aos="fade-up"
+        data-aos-delay="160"
+        className="text-center text-secondary mb-10"
+      >
         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
         consectetur velit
       </p>
@@ -21,6 +33,8 @@ function Pricing() {
         {pricingplans.map((plan, index) => (
           <article
             key={index}
+            data-aos="zoom-in"
+            data-aos-delay="100"
             className="bg-primary-lite p-10 flex flex-col gap-5 rounded-md"
           >
             {/* Title & Description */}
@@ -47,13 +61,13 @@ function Pricing() {
             </p>
 
             {/* Features List */}
-            <ul className="flex flex-col gap-2">
+            <ul className="flex flex-col gap-5">
               {plan.features.map((item, i) => (
                 <li
                   key={i}
-                  className={`flex items-center gap-2 ${
+                  className={`flex text-xl items-center gap-2 ${
                     item.available
-                      ? "text-secondary"
+                      ? "text-gray-600"
                       : "text-gray-400 line-through"
                   }`}
                 >

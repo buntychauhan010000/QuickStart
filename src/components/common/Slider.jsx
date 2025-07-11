@@ -45,8 +45,13 @@ function Slider() {
           }}
         >
           {sliderdata.map((item, index) => (
-            <SwiperSlide key={index} className="h-full">
-              <article className="bg-white shadow-card px-6 py-8 sm:px-8 mb-10 md:px-10 rounded-lg min-h-[420px] sm:min-h-[460px] flex flex-col items-center text-center transition duration-300 ease-in-out">
+            <SwiperSlide
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay="100"
+              className="h-full"
+            >
+              <article className="bg-white shadow-card px-6 py-8 sm:px-8 mb-10 md:px-10 rounded-lg min-h-[420px] sm:min-h-[450px] flex flex-col items-center text-center transition duration-300 ease-in-out">
                 {/* ⭐ Rating */}
                 <div className="flex items-center justify-center gap-1 text-amber-400 text-xl mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -55,7 +60,7 @@ function Slider() {
                 </div>
 
                 {/* 💬 Quote */}
-                <p className="text-gray-700 italic text-base leading-relaxed flex-1 mb-6">
+                <p className="text-gray-700 italic text-base sm:text-lg leading-relaxed flex-1 mb-6">
                   {item.description}
                 </p>
 

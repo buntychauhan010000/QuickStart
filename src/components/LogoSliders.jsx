@@ -24,6 +24,8 @@ function LogoSliders() {
         {logos.map((item, index) => (
           <article
             key={index}
+            data-aos="fade-up"
+            data-aos-delay={index * 200}
             className="flex justify-center items-center mt-6 md:mt-0 grayscale brightness-110 contrast-75 opacity-60 hover:grayscale-0 hover:brightness-100 hover:contrast-100 hover:opacity-100 transition"
           >
             <img

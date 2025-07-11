@@ -8,7 +8,11 @@ function Neque() {
     <div className="container mx-auto px-4 py-16">
       <div className="md:flex justify-between items-center gap-8">
         {/* Left: Text Content */}
-        <article className="md:w-1/2 xl:w-2/5 p-7 xl:pr-20 bg-primary-lite  md:text-left my-6">
+        <article
+          data-aos="fade-right"
+          data-aos-delay="100"
+          className="md:w-1/2 xl:w-2/5 p-7 xl:pr-20 bg-primary-lite  md:text-left my-6"
+        >
           <p className="text-secondary text-start text-xl sm:text-2xl font-bold mb-4">
             Neque ipsum omnis sapiente quod quia dicta
           </p>
@@ -47,7 +51,7 @@ function Neque() {
         </article>
 
         {/* Right: Image */}
-        <div className="md:w-1/2">
+        <div data-aos="fade-left" data-aos-delay="100" className="md:w-1/2">
           <img
             className="rounded-2xl"
             src={Nequegirl}

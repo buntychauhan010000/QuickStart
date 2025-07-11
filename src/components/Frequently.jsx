@@ -12,7 +12,11 @@ function Frequently() {
   return (
     <div className="container mx-auto px-3 py-10 sm:py-20">
       {/* Section Title */}
-      <h2 className="text-3xl font-bold text-center text-secondary">
+      <h2
+        data-aos="fade-up"
+        data-aos-delay="100"
+        className="text-3xl font-bold text-center text-secondary"
+      >
         Frequently Asked Questions
       </h2>
       <div className="w-12 h-1 bg-primary mx-auto my-3" />
@@ -28,6 +32,8 @@ function Frequently() {
           return (
             <div
               key={index}
+          
+
               className={`border border-gray-300 rounded-md mb-3 overflow-hidden transition-all duration-300 ${
                 isActive ? "bg-blue-50" : "bg-white"
               }`}
