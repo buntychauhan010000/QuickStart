@@ -4,13 +4,14 @@ import { FaArrowRight } from "react-icons/fa6";
 import Unleashing1 from "../assets/img/Unleashing1.jpg";
 import Unleashing2 from "../assets/img/Unleashing2.jpg";
 import Unleashing3 from "../assets/img/Unleashing3.jpg";
+import "aos/dist/aos.css";
 
 function UnleashingPotential() {
   return (
     <div id="about" className="container mx-auto px-4 py-10 sm:py-20">
       <article className="flex flex-col lg:flex-row items-start sm:items-center gap-10">
         {/* LEFT SIDE TEXT */}
-        <div className="w-full lg:w-2/5 space-y-5">
+        <div data-aos="fade-right" className="w-full lg:w-2/5 space-y-5">
           <p className="uppercase text-base text-gray-400">Who We Are</p>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-600 font-nunito leading-snug">
             Unleashing Potential with Creative Strategy
@@ -41,7 +42,7 @@ function UnleashingPotential() {
         </div>
 
         {/* RIGHT SIDE IMAGES */}
-        <div className="w-full lg:w-3/5 sm:flex gap-4">
+        <div data-aos="fade-left"  className="w-full lg:w-3/5 sm:flex gap-4">
           <div className="w-4/5 sm:w-1/2 mx-auto">
             <img
               src={Unleashing1}

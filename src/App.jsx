@@ -11,11 +11,23 @@ import Pricing from "./components/Pricing";
 import Frequently from "./components/Frequently";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+
+import "aos/dist/aos.css";
 import Contact from "./components/Contact";
+import Aos from "aos";
+import { useEffect } from "react";
 
 
+  
 
 function App() {
+useEffect(() => {
+  Aos.init({
+    duration: 1000, // Animation duration (in milliseconds)
+    once: true, // Only animate once when scrolling down
+  });
+}, []);
+
 
   return (
     <>
