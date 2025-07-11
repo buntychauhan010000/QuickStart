@@ -9,7 +9,10 @@ function Hero() {
       style={{ backgroundImage: `url(${bgimg})` }}
       className="relative sm:min-h-screen overflow-hidden bg-cover bg-no-repeat bg-bottom"
     >
-      <div className="w-full h-full inset-0 absolute bg-white/85 "></div>
+      {/* White overlay over background */}
+      <div className="absolute inset-0 w-full h-full bg-white/85" />
+
+      {/* Content: Navbar and Welcome message */}
       <div className="relative z-10">
         <NavBar />
         <Welcome />

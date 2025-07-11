@@ -4,9 +4,11 @@ import { enimquisdata } from "./common/helper";
 function Enimquis() {
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* Responsive layout: Text left, Image right (on large screens) */}
       <div className="flex justify-between items-center flex-col-reverse lg:flex-row">
-        <article className="lg:w-1/2 lg:pr-4 mt-4 sm:mt-0 ">
-          <h2 className="text-2xl text-secondary font-nunito font-bold mb-4">
+        {/* Left Column: Text Content */}
+        <article className="lg:w-1/2 lg:pr-4 mt-4 lg:mt-0">
+          <h2 className="text-2xl text-secondary font-bold mb-4">
             Enim quis est voluptatibus aliquid consequatur
           </h2>
           <p className="text-secondary">
@@ -14,6 +16,8 @@ function Enimquis() {
             accusamus. Non ipsam et sed minima temporibus laudantium. Soluta
             voluptate sed facere corporis dolores excepturi
           </p>
+
+          {/* Features List */}
           <div className="grid sm:grid-cols-2 gap-4 mt-6">
             {enimquisdata.map((item, index) => (
               <div
@@ -31,8 +35,10 @@ function Enimquis() {
             ))}
           </div>
         </article>
+
+        {/* Right Column: Image */}
         <div className="lg:w-1/2 lg:pl-4">
-          <img src={mobilecamara} alt="#" />
+          <img src={mobilecamara} alt="Mobile Camera" className="rounded-lg" />
         </div>
       </div>
     </div>

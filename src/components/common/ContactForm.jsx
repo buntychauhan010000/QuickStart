@@ -20,12 +20,11 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const confirmed = window.confirm("Thank for Submitting");
+    const confirmed = window.confirm("Thanks for submitting!");
     if (confirmed) {
-      // Submit logic here
       console.log("Submitted Data:", formData);
 
-      // Optionally reset the form
+      // Reset form
       setFormData({
         name: "",
         email: "",
@@ -36,16 +35,17 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" mx-auto h-[450px] p-6  bg-white shadow-md rounded">
+    <div className="mx-auto p-6 bg-white shadow-md rounded w-full h-[450px] max-w-3xl">
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="flex space-x-4">
+        {/* Name and Email */}
+        <div className="flex flex-col sm:flex-row gap-4">
           <input
             type="text"
             name="name"
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="w-1/2 p-2 border border-gray-200 rounded focus:outline-none focus:ring"
+            className="flex-1 p-2 border border-gray-200 rounded focus:outline-none focus:ring"
             required
           />
           <input
@@ -54,11 +54,12 @@ const ContactForm = () => {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="w-1/2 p-2 border border-gray-200 rounded focus:outline-none focus:ring"
+            className="flex-1 p-2 border border-gray-200 rounded focus:outline-none focus:ring"
             required
           />
         </div>
 
+        {/* Subject */}
         <input
           type="text"
           name="subject"
@@ -69,6 +70,7 @@ const ContactForm = () => {
           required
         />
 
+        {/* Message */}
         <textarea
           name="message"
           placeholder="Message"
@@ -79,8 +81,12 @@ const ContactForm = () => {
           required
         ></textarea>
 
-        <div className="text-center mt-5">
-          <PrimaryButton label={"Send Message"} />
+        {/* Submit Button */}
+        <div className="text-center mt-6">
+          <PrimaryButton
+            label="Send Message"
+            className="bg-primary hover:bg-[#2c728a] text-white py-2 px-6 rounded-lg text-base transition"
+          />
         </div>
       </form>
     </div>

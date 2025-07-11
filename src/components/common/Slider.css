@@ -1,18 +1,18 @@
-/* Fade all slides except center */
+/* 🔹 Fade all slides except center */
 .slider-wrapper .swiper-slide {
     opacity: 0.3;
     transform: scale(0.95);
     transition: all 0.3s ease-in-out;
 }
 
-/* Highlight center slide */
+/* 🔹 Center slide highlighted */
 .slider-wrapper .swiper-slide-active {
     opacity: 1;
     transform: scale(1.05);
     z-index: 10;
 }
 
-/*  Pagination dots visible and lower */
+/* 🔹 Pagination container styling */
 .custom-swiper .swiper-pagination {
     bottom: -50px !important;
     display: flex !important;
@@ -23,7 +23,14 @@
     z-index: 20;
 }
 
-/* Dot styling */
+/* 🔹 Responsive pagination adjustment */
+@media (max-width: 640px) {
+    .custom-swiper .swiper-pagination {
+        bottom: -30px !important;
+    }
+}
+
+/* 🔹 Pagination bullet (dot) style */
 .custom-swiper .swiper-pagination-bullet {
     background-color: #999;
     opacity: 0.5;
@@ -34,54 +41,36 @@
     transition: all 0.3s ease;
 }
 
-/* Active dot style */
+/* 🔹 Active bullet style using Tailwind color */
 .custom-swiper .swiper-pagination-bullet-active {
-    background-color: #2563eb;
+    background-color: var(--color-primary);
+    /* Uses your theme color */
     opacity: 1;
     width: 12px;
     height: 12px;
-    z-index: 10;
 }
-/* 🔸 All slides faded by default */
-.slider-wrapper .swiper-slide {
-    opacity: 0.3;
-    transform: scale(0.95);
+
+/* 🔹 Optional: Navigation arrow styling (if using) */
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--color-primary);
+    font-size: 18px;
+    top: 40%;
     transition: all 0.3s ease-in-out;
 }
 
-/* 🔸 Center slide highlighted */
-.slider-wrapper .swiper-slide-active {
-    opacity: 1;
-    transform: scale(1.05);
-    z-index: 10;
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #0a4d5a;
+    /* darker shade of primary */
+    transform: scale(1.2);
 }
 
-/* 🔸 Pagination dots spacing */
-.custom-swiper .swiper-pagination {
-    bottom: -50px !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    position: absolute !important;
-    width: 100%;
-    z-index: 20;
-}
+/* Optional: Hide arrow on mobile */
+@media (max-width: 640px) {
 
-/* 🔸 Dot style */
-.custom-swiper .swiper-pagination-bullet {
-    background-color: #999;
-    opacity: 0.5;
-    width: 10px;
-    height: 10px;
-    margin: 0 5px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-
-/* 🔸 Active dot */
-.custom-swiper .swiper-pagination-bullet-active {
-    background-color: #2563eb;
-    opacity: 1;
-    width: 12px;
-    height: 12px;
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }

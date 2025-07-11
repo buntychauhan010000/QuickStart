@@ -2,7 +2,6 @@ import React from "react";
 import { BsTwitterX } from "react-icons/bs";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
-// Footer section link groups
 const footerLinks = [
   {
     title: "Useful Links",
@@ -30,28 +29,28 @@ const Footer = () => {
   return (
     <footer className="bg-primary-lite text-gray-700 py-10 px-6 md:px-20">
       <div className="container mx-auto">
-        {/* Grid layout: Company Info, Links, Newsletter */}
+        {/* Footer Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {/* === 1. Company Information Section === */}
+          {/* Company Info */}
           <div>
-            <h2 className="text-3xl font-bold mb-5 font-nunito">QuickStart</h2>
-            <p className="font-nunito text-sm mt-12">A108 Adam Street</p>
-            <p className="font-nunito text-sm mt-2">New York, NY 535022</p>
-            <p className="mt-2 text-sm font-nunito">
+            <h2 className="text-3xl font-bold font-nunito mb-5">QuickStart</h2>
+            <p className="text-sm font-nunito">A108 Adam Street</p>
+            <p className="text-sm font-nunito mt-1">New York, NY 535022</p>
+            <p className="text-sm font-nunito mt-2">
               <strong>Phone:</strong> +1 5589 55488 55
             </p>
-            <p className="text-sm font-nunito mt-2">
+            <p className="text-sm font-nunito mt-1">
               <strong>Email:</strong> info@example.com
             </p>
 
-            {/* === Social Media Icons === */}
+            {/* Social Icons */}
             <div className="flex space-x-3 mt-4">
               {[BsTwitterX, FaFacebook, FaInstagram, FaLinkedin].map(
                 (Icon, idx) => (
                   <a
                     key={idx}
                     href="#"
-                    className="p-2 border rounded-full text-gray-500 hover:text-primary hover:border-blue-500"
+                    className="p-2 border rounded-full text-gray-500 hover:text-primary hover:border-primary transition-colors"
                   >
                     <Icon />
                   </a>
@@ -60,16 +59,16 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* === 2 & 3. Dynamic Link Sections (Useful Links + Our Services) === */}
+          {/* Link Sections */}
           {footerLinks.map((section, index) => (
             <div key={index}>
-              <h3 className="text-lg font-semibold mb-4 font-nunito">
+              <h3 className="text-lg font-semibold font-nunito mb-4">
                 {section.title}
               </h3>
               <ul className="space-y-2">
                 {section.links.map((link, idx) => (
                   <li key={idx}>
-                    <a href="#" className="hover:text-primary text-sm">
+                    <a href="#" className="text-sm hover:text-primary">
                       {link}
                     </a>
                   </li>
@@ -78,40 +77,38 @@ const Footer = () => {
             </div>
           ))}
 
-          {/* === 4. Newsletter Subscription Section === */}
+          {/* Newsletter Section */}
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-nunito">
+            <h3 className="text-lg font-semibold font-nunito mb-4">
               Our Newsletter
             </h3>
-            <p className="mb-4 text-sm">
+            <p className="text-sm mb-4">
               Subscribe to our newsletter and receive the latest news about our
               products and services!
             </p>
-
-            {/* === Email Input & Subscribe Button === */}
             <form className="flex">
               <input
                 type="email"
                 placeholder="Your Email"
-                className="flex-1 ps-2 sm:px-3 bg-white rounded-l-full border border-primary focus:outline-none"
+                className="flex-1 ps-3 py-2 bg-white rounded-l-full border border-primary focus:outline-none"
               />
               <button
                 type="submit"
-                className="bg-primary text-white px-4 py-2 rounded-r-full "
+                className="bg-primary text-white px-4 py-2 rounded-r-full hover:bg-opacity-90 transition"
               >
                 Subscribe
               </button>
             </form>
           </div>
         </div>
-      </div>
 
-      {/* === Footer Divider & Copyright === */}
-      <hr className="my-6 text-gray-300" />
-      <p className="text-center text-sm">
-        © Copyright <strong>QuickStartAll</strong> Rights Reserved <br />
-        Designed by <span className="text-primary">BootstrapMade</span>
-      </p>
+        {/* Divider & Copyright */}
+        <hr className="my-6 border-gray-300" />
+        <p className="text-center text-sm font-nunito">
+          © <strong>QuickStartAll</strong> | All Rights Reserved <br />
+          Designed by <span className="text-primary">BootstrapMade</span>
+        </p>
+      </div>
     </footer>
   );
 };

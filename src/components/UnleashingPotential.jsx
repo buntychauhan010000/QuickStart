@@ -7,8 +7,7 @@ import Unleashing3 from "../assets/img/Unleashing3.jpg";
 
 function UnleashingPotential() {
   return (
-    <div id="about"
-      className="container mx-auto px-4 py-10 sm:py-20">
+    <div id="about" className="container mx-auto px-4 py-10 sm:py-20">
       <article className="flex flex-col lg:flex-row items-start sm:items-center gap-10">
         {/* LEFT SIDE TEXT */}
         <div className="w-full lg:w-2/5 space-y-5">
@@ -23,43 +22,26 @@ function UnleashingPotential() {
 
           {/* Bullet Points */}
           <ul className="space-y-3">
-            <li className="flex items-start gap-2">
-              <span>
-                {" "}
+            {[
+              "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+              "Duis aute irure dolor in reprehenderit in voluptate velit.",
+              "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.",
+            ].map((text, index) => (
+              <li key={index} className="flex items-start gap-2">
                 <IoIosCheckmarkCircleOutline className="text-primary text-2xl" />
-              </span>
-              <span className="text-gray-700">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span>
-                <IoIosCheckmarkCircleOutline className="text-primary text-2xl" />
-              </span>
-              <span className="text-gray-700">
-                Duis aute irure dolor in reprehenderit in voluptate velit.
-              </span>
-            </li>
-            <li className="flex items-start gap-2">
-              <span>
-                <IoIosCheckmarkCircleOutline className="text-primary text-2xl" />
-              </span>
-              <span className="text-gray-700 line-clamp-2">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate trideta
-                storacalaperda mastiro dolore eu fugiat nulla pariatur.
-              </span>
-            </li>
+                <span className="text-gray-700 line-clamp-2">{text}</span>
+              </li>
+            ))}
           </ul>
 
           {/* Read More Button */}
-          <button className="flex items-center gap-2 font-nunito bg-primary text-white text-base px-5 py-3 rounded-lg hover:bg-primary transition-colors">
+          <button className="flex items-center gap-2 font-nunito bg-primary text-white text-base px-5 py-3 rounded-lg hover:bg-[#2e6f8c] transition-colors duration-300">
             Read More <FaArrowRight />
           </button>
         </div>
 
         {/* RIGHT SIDE IMAGES */}
-        <div className="w-full lg:w-3/5 sm:flex gap-4 ">
+        <div className="w-full lg:w-3/5 sm:flex gap-4">
           <div className="w-4/5 sm:w-1/2 mx-auto">
             <img
               src={Unleashing1}
@@ -67,7 +49,7 @@ function UnleashingPotential() {
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
-          <div className="w-4/5 mx-auto sm:w-1/2 flex flex-col gap-4 mt-5">
+          <div className="w-4/5 mx-auto sm:w-1/2 flex flex-col gap-4 mt-5 sm:mt-0">
             <img
               src={Unleashing2}
               alt="Team 2"
