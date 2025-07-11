@@ -29,7 +29,9 @@ function UnleashingPotential() {
               "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.",
             ].map((text, index) => (
               <li key={index} className="flex items-start gap-2">
-                <IoIosCheckmarkCircleOutline className="text-primary text-2xl" />
+                <span>
+                  <IoIosCheckmarkCircleOutline className="text-primary text-2xl" />
+                </span>
                 <span className="text-gray-700 line-clamp-2">{text}</span>
               </li>
             ))}
@@ -42,7 +44,7 @@ function UnleashingPotential() {
         </div>
 
         {/* RIGHT SIDE IMAGES */}
-        <div data-aos="fade-left"  className="w-full lg:w-3/5 sm:flex gap-4">
+        <div data-aos="fade-left" className="w-full lg:w-3/5 sm:flex gap-4">
           <div className="w-4/5 sm:w-1/2 mx-auto">
             <img
               src={Unleashing1}
