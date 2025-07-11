@@ -35,12 +35,12 @@ function NavBar() {
           hasShadow ? "shadow-md" : ""
         }`}
       >
-        <div className="container mx-auto px-3 py-6 relative">
+        <div className="container mx-auto px-3 py-2 md:py-3 lg:py-5 relative">
           <div className="flex justify-between lg:justify-around items-center">
             {/* Logo */}
             <a className="flex items-center gap-3" href="#">
               <img className="max-h-6 sm:max-h-9" src={logo} alt="logo" />
-              <h1 className="text-3xl font-bold text-secondary">QuickStart</h1>
+              <h1 className="text-2xl sm:text-3xl font-bold text-secondary">QuickStart</h1>
             </a>
 
             {/* Desktop Nav */}
