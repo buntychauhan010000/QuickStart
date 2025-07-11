@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PrimaryButton from "../PrimaryButton";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -17,21 +16,30 @@ const ContactForm = () => {
     }));
   };
 
+  // ✅ Function to capitalize each word
+  const capitalizeFullName = (name) => {
+    return name
+      .trim()
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+      .join(" ");
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const confirmed = window.confirm("Thanks for submitting!");
-    if (confirmed) {
-      console.log("Submitted Data:", formData);
+    const capitalizedName = capitalizeFullName(formData.name);
 
-      // Reset form
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-    }
+    // ✅ Show alert
+    alert(`Hello ${capitalizedName}! Thanks for visiting!`);
+
+    // Reset form
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
   };
 
   return (
@@ -83,10 +91,12 @@ const ContactForm = () => {
 
         {/* Submit Button */}
         <div className="text-center mt-6">
-          <PrimaryButton
-            label="Send Message"
+          <button
+            type="submit"
             className="bg-primary hover:bg-[#2c728a] text-white py-2 px-6 rounded-lg text-base transition"
-          />
+          >
+            Send Message
+          </button>
         </div>
       </form>
     </div>
