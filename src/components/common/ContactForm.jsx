@@ -93,7 +93,7 @@ const ContactForm = () => {
         <div className="text-center mt-6">
           <button
             type="submit"
-            className="bg-primary hover:bg-[#2c728a] text-white py-2 px-6 rounded-lg text-base transition"
+            className="bg-primary hover:bg-[#2c728a] text-white  rounded-lg text-sm sm:text-base px-3 sm:px-5 py-2 sm:py-3 transition"
           >
             Send Message
           </button>
