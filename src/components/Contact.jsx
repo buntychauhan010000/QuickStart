@@ -1,6 +1,7 @@
 import React from "react";
 import { BsGeoAlt, BsTelephone, BsEnvelope } from "react-icons/bs";
 import ContactForm from "./common/ContactForm";
+// import ContactForm from "../components/Corporis/ContactForm";
 
 function Contact() {
   return (
