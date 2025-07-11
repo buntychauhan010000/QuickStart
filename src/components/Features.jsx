@@ -22,7 +22,7 @@ function Features() {
       <p
         data-aos="fade-up"
         data-aos-delay="70"
-        className="text-base text-secondary text-center mb-15"
+        className="text-base text-secondary text-center sm:mb-15"
       >
         Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
         consectetur velit
@@ -34,7 +34,7 @@ function Features() {
         <div className="lg:w-1/2 xl:w-2/5 p-4">
           {featuresdata.map((feature, i) => (
             <article key={i} data-aos="fade-up" data-aos-delay={i * 100}>
-              <div className="flex sm:gap-5 py-7 hover:bg-primary-lite transition-all duration-300 sm:p-5 my-5">
+              <div className="flex sm:gap-5 py-2 sm:py-4 hover:bg-primary-lite transition-all duration-300 sm:p-5 my-5">
                 <div className="text-primary text-4xl mr-3 bg-white shadow-md w-fit h-fit p-3 rounded-full">
                   {feature.src}
                 </div>

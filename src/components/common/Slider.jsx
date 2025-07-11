@@ -11,7 +11,7 @@ import "./Slider.css";
 
 function Slider() {
   return (
-    <div className="container mx-auto px-4 sm:py-16 relative overflow-hidden">
+    <div className="container mx-auto px-4 sm:py-4 sm:py-8 md:py-16 relative overflow-hidden">
       {/* 🔽 Bottom blur shadow */}
       <div className="absolute bottom-0 left-0 right-0 h-16  bg-gradient-to-t from-gray-100 to-transparent blur-md z-0 pointer-events-none"></div>
 

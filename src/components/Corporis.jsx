@@ -4,7 +4,7 @@ import PrimaryButton from "./PrimaryButton";
 
 function Corporis() {
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="container mx-auto px-4 py-4 sm:py-8 md:py-16">
       {/* Two-column layout: Image + Content */}
       <div className="md:flex justify-between items-center gap-8">
         {/* Left: Mobile Image */}

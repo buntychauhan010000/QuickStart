@@ -31,7 +31,7 @@ function LogoSliders() {
             <img
               src={item.src}
               alt={`${item.name} logo`}
-              className="h-12 w-auto"
+              className="h-9 sm:h-12 w-auto"
             />
           </article>
         ))}

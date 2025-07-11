@@ -5,7 +5,10 @@ import ContactForm from "./common/ContactForm";
 
 function Contact() {
   return (
-    <div id="contact" className="container mx-auto px-4 py-16 mb-15">
+    <div
+      id="contact"
+      className="container mx-auto px-4 py-4  md:py-16 mb-15"
+    >
       {/* Section Heading */}
       <h2 className="text-3xl font-bold text-center text-secondary">Contact</h2>
       <div className="w-12 h-1 bg-primary mx-auto my-3" />
