@@ -10,8 +10,8 @@ import Enimquis from "./components/Enimquis";
 import Pricing from "./components/Pricing";
 import Frequently from "./components/Frequently";
 import Testimonials from "./components/Testimonials";
-import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Contact from "./components/Contact";
 
 
 
