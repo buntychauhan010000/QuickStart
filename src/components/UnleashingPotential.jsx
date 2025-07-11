@@ -38,7 +38,7 @@ function UnleashingPotential() {
           </ul>
 
           {/* Read More Button */}
-          <button className="flex items-center gap-2 font-nunito bg-primary text-white text-base px-5 py-3 rounded-lg hover:bg-[#2e6f8c] transition-colors duration-300">
+          <button className="flex items-center gap-2 font-nunito mx-auto sm:mx-0 bg-primary text-white text-sm sm:text-base px-3 sm:px-5 py-2 sm:py-3 rounded-lg hover:bg-[#2e6f8c] transition-colors duration-300">
             Read More <FaArrowRight />
           </button>
         </div>
