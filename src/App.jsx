@@ -18,6 +18,7 @@ import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import FullScreenLoader from "./components/common/FullScreenLoader";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -33,13 +34,9 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) {
-    return (
-      <div className="w-screen h-screen flex justify-center items-center bg-white overflow-hidden">
-        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-primary border-solid"></div>
-      </div>
-    );
-  }
+ if (loading) {
+   return <FullScreenLoader />;
+ }
 
   return (
     <>

@@ -21,7 +21,7 @@ function Corporis() {
           <article
             data-aos="fade-left"
             data-aos-delay="400"
-            className="md:w-1/2 xl:w-2/5 p-7 xl:pr-20 md:bg-primary-lite text-center md:text-left mt-6"
+            className="md:w-1/2 xl:w-2/5 md:p-7 xl:pr-20 md:bg-primary-lite text-center md:text-left mt-6"
           >
             <p className="text-secondary text-xl sm:text-2xl md:text-xl lg:text-2xl font-nunito font-bold mb-4">
               Corporis temporibus maiores provident
