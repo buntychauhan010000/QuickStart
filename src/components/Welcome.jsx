@@ -10,7 +10,6 @@ function Welcome() {
           {/* Heading */}
           <h1
             data-aos="fade-up"
-            data-aos-delay="10"
             className="text-2xl sm:text-5xl font-bold font-nunito text-secondary"
           >
             Welcome to <span className="text-primary">QuickStart</span>
@@ -19,7 +18,6 @@ function Welcome() {
           {/* Subheading */}
           <p
             data-aos="fade-up"
-            data-aos-delay="50"
             className="text-secondary-lite mt-3 mb-6 text-base sm:text-xl"
           >
             Quickly start your project now and set the stage for success
@@ -28,7 +26,6 @@ function Welcome() {
           {/* Buttons: Get Started & Watch Video */}
           <div
             data-aos="fade-up"
-            data-aos-delay="100"
             className="flex justify-center gap-5"
           >
             <PrimaryButton
