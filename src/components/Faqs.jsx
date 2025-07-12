@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import FaqsIndex from "../components/common/FaqsIndex";
+import FaqsIndex from "./common/FaqsIndex";
 
-function Frequently() {
+function Faqs() {
   return (
     <div className="container mx-auto px-3 py-10 sm:py-20">
       {/* Section Title */}
@@ -31,4 +31,4 @@ function Frequently() {
   );
 }
 
-export default Frequently;
+export default Faqs;

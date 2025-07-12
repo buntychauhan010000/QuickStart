@@ -13,7 +13,7 @@ import Neque from "./components/Neque";
 import Services from "./components/Services";
 import Enimquis from "./components/Enimquis";
 import Pricing from "./components/Pricing";
-import Frequently from "./components/Frequently";
+import Faqs from "./components/Faqs";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -53,7 +53,7 @@ function App() {
       <Services />
       <Enimquis />
       <Pricing />
-      <Frequently />
+      <Faqs />
       <Testimonials />
       <Contact />
       <Footer />

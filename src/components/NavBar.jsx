@@ -87,7 +87,7 @@ function NavBar() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="fixed inset-0 z-40 bg-gray-300 bg-opacity-20 flex justify-center items-start pt-28 ">
-          <div className="bg-white w-full max-w-4/5  h-[88vh] rounded-lg shadow-lg p-8 hidden-scroll flex flex-col">
+          <div className="bg-white w-full max-w-4/5   rounded-lg shadow-lg p-8 hidden-scroll flex flex-col">
             <ul className="flex flex-col gap-6 text-lg items-start">
               {navlinks.map((link, index) => (
                 <li key={index}>
