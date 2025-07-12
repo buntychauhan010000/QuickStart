@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div
       style={{ backgroundImage: `url(${bgimg})` }}
-      className="relative sm:min-h-screen overflow-hidden bg-cover bg-no-repeat bg-bottom"
+      className="relative lg:min-h-screen overflow-hidden bg-cover bg-no-repeat bg-bottom"
     >
       {/* White overlay over background */}
       <div className="absolute inset-0 w-full h-full bg-white/85" />
