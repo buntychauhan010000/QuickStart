@@ -5,7 +5,7 @@ import hero from "../assets/img/hero.webp";
 function Welcome() {
   return (
     <div id="home" className="container mx-auto px-3 mt-10 pt-24">
-      <div className="flex justify-center sm:items-center mt-5 sm:mt-10 md:mt-20 ">
+      <div className="flex justify-center sm:items-center mt-5 sm:mt-10 ">
         <div className="text-center">
           {/* Heading */}
           <h1
