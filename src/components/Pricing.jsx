@@ -29,52 +29,60 @@ function Pricing() {
       </p>
 
       {/* Pricing Plans Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 lg:gap-6 ">
         {pricingplans.map((plan, index) => (
           <article
             key={index}
             data-aos="zoom-in"
             data-aos-delay="100"
-            className="bg-primary-lite p-10 flex flex-col gap-5 rounded-md"
+            className="bg-primary-lite p-5 lg:p-10 flex flex-col gap-2 lg:gap-5 rounded-md"
           >
             {/* Title & Description */}
-            <p className="text-xl font-nunito font-semibold text-secondary">
+            <p className="text-xl md:text-lg lg:text-xl font-nunito font-semibold text-secondary">
               {plan.title}
             </p>
-            <p className="text-sm text-secondary">{plan.description}</p>
+            <p className="text-sm md:text-xs lg:text-sm text-secondary">
+              {plan.description}
+            </p>
 
             {/* Price */}
-            <p className="text-lg text-secondary-lite">
-              <span className="text-5xl text-primary font-nunito font-bold">
-                <sup className="text-2xl">$</sup>
+            <p className="text-lg md:text-base lg:text-lg text-secondary-lite">
+              <span className="text-5xl md:text-4xl text-primary font-nunito font-bold">
+                <sup className="text-2xl md:text-xl lg:text-2xl">$</sup>
                 {plan.price}
               </span>{" "}
               <span>/ month</span>
             </p>
 
             {/* CTA Button */}
-            <button className="py-2 w-full border font-nunito text-base text-secondary rounded-md hover:bg-primary duration-300 font-medium hover:text-white hover:border-primary">
+            <button className="py-2 md:py-1 lg:py-2 w-full border font-nunito text-base text-secondary rounded-md hover:bg-primary duration-300 font-medium hover:text-white hover:border-primary">
               Start a free trial
             </button>
-            <p className="text-center text-secondary">
+            <p className="text-center text-base md:text-sm lg:text-base text-secondary">
               No credit card required
             </p>
 
             {/* Features List */}
-            <ul className="flex flex-col gap-5">
+            <ul className="flex flex-col gap-5 md:gap-2 lg:gap-5">
               {plan.features.map((item, i) => (
                 <li
                   key={i}
-                  className={`flex text-xl items-center gap-2 ${
+                  className={`flex text-xl md:text-lg lg:text-lg items-center gap-2 ${
                     item.available
-                      ? "text-gray-600"
+                      ? "text-gray-600 text-base md:text-sm lg:text-base"
                       : "text-gray-400 line-through"
                   }`}
                 >
                   {item.available ? (
-                    <FaCheck className="text-green-500" />
+                    <span>
+                      {" "}
+                      <FaCheck className="text-green-500 text-sm md:text-xs lg:text-sm" />
+                    </span>
                   ) : (
-                    <FiX />
+                    <span>
+                      {" "}
+                      <FiX className="text-sm md:text-xs lg:text-sm" />
+                    </span>
                   )}
                   <span className="text-sm">{item.text}</span>
                 </li>

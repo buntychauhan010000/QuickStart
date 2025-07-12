@@ -21,13 +21,15 @@ function Testimonials() {
         <p
           data-aos="fade-up"
           data-aos-delay="1560"
-          className="text-center text-secondary mb-10"
+          className="text-center text-secondary mb-8 lg:mb-10"
         >
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
           consectetur velit
         </p>
 
         {/* Swiper Slider Component */}
+      </div>
+      <div className="px-10">
         <Slider />
       </div>
     </div>

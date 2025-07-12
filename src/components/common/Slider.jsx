@@ -11,7 +11,7 @@ import "./Slider.css";
 
 function Slider() {
   return (
-    <div className="container mx-auto px-4  sm:py-8 md:py-16 relative overflow-hidden">
+    <div className=" sm:py-8 md:py-16 relative overflow-hidden">
       {/* 🔽 Bottom blur shadow */}
       <div className="absolute bottom-0 left-0 right-0 h-16  bg-gradient-to-t from-gray-100 to-transparent blur-md z-0 pointer-events-none"></div>
 
@@ -47,8 +47,6 @@ function Slider() {
           {sliderdata.map((item, index) => (
             <SwiperSlide
               key={index}
-              data-aos="fade-up"
-              data-aos-delay="100"
               className="h-full"
             >
               <article className="bg-white shadow-card px-6 py-8 sm:px-8 mb-10 md:px-10 rounded-lg min-h-[420px] sm:min-h-[450px] flex flex-col items-center text-center transition duration-300 ease-in-out">
@@ -60,7 +58,7 @@ function Slider() {
                 </div>
 
                 {/* 💬 Quote */}
-                <p className="text-gray-700 italic font-nunito text-base sm:text-lg leading-relaxed flex-1 mb-6">
+                <p className="text-gray-700 italic font-nunito text-base sm:text-lg leading line-clamp-6  mb-6">
                   {item.description}
                 </p>
 
