@@ -13,7 +13,7 @@ function Neque() {
           data-aos-delay="100"
           className="md:w-1/2 xl:w-2/5 p-7 xl:pr-20 bg-primary-lite  md:text-left my-6"
         >
-          <p className="text-secondary text-start text-xl sm:text-2xl font-bold mb-4">
+          <p className="text-secondary text-start text-xl sm:text-2xl font-nunito font-bold mb-4">
             Neque ipsum omnis sapiente quod quia dicta
           </p>
           <p className="text-secondary text-sm sm:text-base font-roboto mb-4">

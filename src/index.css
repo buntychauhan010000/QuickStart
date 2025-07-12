@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
-.font-nunito {
-  font-family: "Nunito", sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
- 
-}
-
-body,html{
+body,
+html {
   overflow-x: hidden;
 }
 
+.bg-img {
+  background-image: url("../assets/img/bgimg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 @theme {
   --color-primary: #388da8;
@@ -20,12 +22,13 @@ body,html{
   --color-secondary: #3e5055;
   --color-secondary-lite: #3e5055ce;
   --color-primary-text: #0dcaf0;
-  --font-nunito: "Nunito";
+
   --shadow-card: 0 3px 15px rgba(0, 0, 0, 0.1);
+  --font-roboto: "Roboto";
 }
 
-html {
-  scroll-behavior: smooth;
+.font-nunito {
+  font-family: "Nunito", sans-serif;
 }
 
 

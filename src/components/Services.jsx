@@ -8,7 +8,7 @@ function Services() {
         {/* Section Heading */}
         <h2
           id="services"
-          className="text-3xl font-nunito font-bold text-center text-secondary"
+          className="text-3xl font-nunito font-bold  text-center text-secondary"
         >
           Services
         </h2>
@@ -41,7 +41,7 @@ function Services() {
 
               {/* Text Content */}
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold font-nunito text-secondary-lite mb-2">
+                <h3 className="text-xl sm:text-2xl font-semibold font-nunito text-secondary-lite mb-2">
                   {item.title}
                 </h3>
                 <p className="text-sm sm:text-base text-secondary-lite mb-3">

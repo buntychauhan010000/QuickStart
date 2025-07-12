@@ -46,7 +46,7 @@ const ContactForm = () => {
     <div className="mx-auto p-6 bg-white shadow-md rounded w-full h-[450px] max-w-3xl">
       <form onSubmit={handleSubmit} className="space-y-4">
         {/* Name and Email */}
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           <input
             type="text"
             name="name"

@@ -7,7 +7,12 @@ import { navlinks } from "./common/helper";
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [hasShadow, setHasShadow] = useState(false);
-
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto"; // clean up on unmount
+    };
+  }, [isOpen]);
   // Toggle mobile menu
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
@@ -29,8 +34,6 @@ function NavBar() {
     <>
       {/* Fixed Navbar */}
       <div
-        data-aos="zoom-in"
-        data-aos-duration="500"
         className={`fixed top-0 left-0 w-full bg-white z-50 transition-all duration-300 ${
           hasShadow ? "shadow-md" : ""
         }`}
@@ -40,7 +43,9 @@ function NavBar() {
             {/* Logo */}
             <a className="flex items-center gap-3" href="#">
               <img className="max-h-6 sm:max-h-9" src={logo} alt="logo" />
-              <h1 className="text-2xl sm:text-3xl font-bold text-secondary">QuickStart</h1>
+              <h1 className="text-2xl sm:text-3xl font-nunito font-bold text-secondary">
+                QuickStart
+              </h1>
             </a>
 
             {/* Desktop Nav */}
@@ -81,8 +86,8 @@ function NavBar() {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-40 bg-gray-300 bg-opacity-20 flex justify-center items-start pt-28">
-          <div className="bg-white w-full max-w-sm  h-[88vh] rounded-lg shadow-lg p-8 overflow-y-auto flex flex-col">
+        <div className="fixed inset-0 z-40 bg-gray-300 bg-opacity-20 flex justify-center items-start pt-28 ">
+          <div className="bg-white w-full max-w-4/5  h-[88vh] rounded-lg shadow-lg p-8 hidden-scroll flex flex-col">
             <ul className="flex flex-col gap-6 text-lg items-start">
               {navlinks.map((link, index) => (
                 <li key={index}>

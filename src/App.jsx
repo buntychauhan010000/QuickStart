@@ -57,7 +57,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      <ScrollToTopButton />
+      {/* <ScrollToTopButton /> */}
     </>
   );
 }

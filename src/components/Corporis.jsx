@@ -18,7 +18,7 @@ function Corporis() {
           data-aos-delay="400"
           className="md:w-1/2 xl:w-2/5 p-7 xl:pr-20 bg-primary-lite text-center md:text-left mt-6"
         >
-          <p className="text-secondary text-lg sm:text-2xl font-bold mb-4">
+          <p className="text-secondary text-lg sm:text-2xl font-nunito font-bold mb-4">
             Corporis temporibus maiores provident
           </p>
           <p className="text-secondary text-sm sm:text-base mb-4">

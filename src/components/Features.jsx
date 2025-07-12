@@ -10,7 +10,7 @@ function Features() {
         data-aos="fade-up"
         data-aos-delay="40"
         id="features"
-        className="text-3xl text-secondary font-bold text-center"
+        className="text-3xl text-secondary font-nunito font-bold text-center"
       >
         Features
       </p>
@@ -39,7 +39,7 @@ function Features() {
                   {feature.src}
                 </div>
                 <div>
-                  <p className="text-lg text-secondary font-bold">
+                  <p className="text-lg text-secondary font-nunito font-semibold ">
                     {feature.title}
                   </p>
                   <p className="text-sm text-secondary">{feature.lorem}</p>

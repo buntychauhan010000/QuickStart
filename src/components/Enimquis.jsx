@@ -11,15 +11,11 @@ function Enimquis() {
           <h2
             data-aos="fade-up"
             data-aos-delay="100"
-            className="text-2xl text-secondary font-bold mb-4"
+            className="text-2xl text-secondary font-nunito font-bold mb-4"
           >
             Enim quis est voluptatibus aliquid consequatur
           </h2>
-          <p
-            data-aos="fade-up"
-            data-aos-delay="105"
-            className="text-secondary"
-          >
+          <p data-aos="fade-up" data-aos-delay="105" className="text-secondary">
             Esse voluptas cumque vel exercitationem. Reiciendis est hic
             accusamus. Non ipsam et sed minima temporibus laudantium. Soluta
             voluptate sed facere corporis dolores excepturi
@@ -38,7 +34,7 @@ function Enimquis() {
                   {item.icon}
                 </div>
                 <div>
-                  <h3 className="text-lg text-secondary mb-1">{item.title}</h3>
+                  <h3 className="text-lg text-secondary font-nunito font-semibold mb-1">{item.title}</h3>
                   <p className="text-sm text-gray-600">{item.description}</p>
                 </div>
               </div>

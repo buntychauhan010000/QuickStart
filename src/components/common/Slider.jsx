@@ -60,7 +60,7 @@ function Slider() {
                 </div>
 
                 {/* 💬 Quote */}
-                <p className="text-gray-700 italic text-base sm:text-lg leading-relaxed flex-1 mb-6">
+                <p className="text-gray-700 italic font-nunito text-base sm:text-lg leading-relaxed flex-1 mb-6">
                   {item.description}
                 </p>
 
@@ -71,7 +71,7 @@ function Slider() {
                     alt={item.name}
                     className="mx-auto rounded-full w-20 h-20 object-cover mb-3 border border-primary"
                   />
-                  <h3 className="text-lg font-bold text-secondary">
+                  <h3 className="text-lg font-nunito font-bold text-secondary">
                     {item.name}
                   </h3>
                   <p className="text-sm text-secondary-lite">{item.position}</p>

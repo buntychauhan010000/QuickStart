@@ -21,7 +21,7 @@ function InfoCards() {
 
               {/* Text Content */}
               <div>
-                <h3 className="text-lg text-secondary font-semibold mb-1 transition-colors duration-300 group-hover:text-primary">
+                <h3 className="text-lg text-secondary font-semibold mb-1 font-nunito transition-colors duration-300 group-hover:text-primary">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-sm">{item.description}</p>
