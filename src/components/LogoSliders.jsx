@@ -23,11 +23,12 @@ const logos = [
 
 function LogoSliders() {
   return (
-    <div className="container mx-auto px-3 py-10 sm:py-20">
+    <div className="container mx-auto px-3 py-10 lg:py-20">
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 1000, disableOnInteraction: false }}
-        speed={1000}
+        autoplay={{ delay: 100, disableOnInteraction: false }}
+        speed={1100}
+        slidesPerView={3}
         loop={true}
         breakpoints={{
           0: { slidesPerView: 2, spaceBetween: 20 },
@@ -43,7 +44,7 @@ function LogoSliders() {
             <div
               data-aos="fade-up"
               data-aos-delay={index * 200}
-              className="flex justify-center items-center grayscale brightness-110 contrast-75 opacity-60 hover:grayscale-0 hover:brightness-100 hover:contrast-100 hover:opacity-100 transition"
+              className="flex justify-center items-center grayscale brightness-110 contrast-75 opacity-60 hover:grayscale-0 hover:brightness-100 hover:contrast-100 hover:opacity-100 transition-all duration-200"
             >
               <img
                 src={item.src}

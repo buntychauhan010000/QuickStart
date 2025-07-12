@@ -8,21 +8,26 @@ import "aos/dist/aos.css";
 
 function UnleashingPotential() {
   return (
-    <div id="about" className="container mx-auto px-4 py-10 sm:py-20">
-      <article className="flex flex-col lg:flex-row items-start sm:items-center gap-10">
+    <div id="about" className="container mx-auto px-4 py-10 lg:py-20">
+      <article className="flex flex-col md:flex-row items-start sm:items-center gap-3 lg:gap-10">
         {/* LEFT SIDE TEXT */}
-        <div data-aos="fade-right" className="w-full lg:w-2/5 space-y-5">
-          <p className="uppercase text-base text-gray-400">Who We Are</p>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-600 font-nunito leading-snug">
+        <div
+          data-aos="fade-right"
+          className="w-full lg:w-2/5 space-y-5 md:space-y-2  lg:space-y-5"
+        >
+          <p className="uppercase text-base md:text-sm text-gray-400">
+            Who We Are
+          </p>
+          <h2 className="text-3xl sm:text-4xl md:text-2xl lg:text-4xl font-bold text-gray-600 font-nunito leading-tight">
             Unleashing Potential with Creative Strategy
           </h2>
-          <p className="italic text-gray-600">
+          <p className="italic text-base md:text-sm lg:text-base text-gray-600 md:line-clamp-2 lg:line-clamp-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
           {/* Bullet Points */}
-          <ul className="space-y-3">
+          <ul className="md:space-y-1 lg:space-y-3 text-base md:text-sm lg:text-base">
             {[
               "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
               "Duis aute irure dolor in reprehenderit in voluptate velit.",
@@ -38,7 +43,7 @@ function UnleashingPotential() {
           </ul>
 
           {/* Read More Button */}
-          <button className="flex items-center gap-2 font-nunito mx-auto sm:mx-0 bg-primary text-white text-sm sm:text-base px-3 sm:px-5 py-2 sm:py-3 rounded-lg hover:bg-[#2e6f8c] transition-colors duration-300">
+          <button className="flex items-center gap-2 font-nunito mx-auto sm:mx-0 bg-primary text-white text-sm sm:text-base px-3 lg:px-5 py-2 lg:py-3 rounded-lg hover:bg-[#2e6f8c] transition-colors duration-300">
             Read More <FaArrowRight />
           </button>
         </div>
