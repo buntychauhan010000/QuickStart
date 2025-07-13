@@ -8,6 +8,11 @@ body,
 html {
   overflow-x: hidden;
 }
+.hero-bg {
+  background-image: url('/src/assets/img/bgimg.webp');
+  background-size: cover;
+  background-position: center;
+}
 
 .bg-img {
   background-image: url("../assets/img/bgimg.webp");

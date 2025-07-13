@@ -49,7 +49,7 @@ function LogoSliders() {
               <img
                 src={item.src}
                 alt={`${item.name} logo`}
-                className="h-9 sm:h-12 w-auto"
+                className="h-9 lg:h-12 w-auto"
               />
             </div>
           </SwiperSlide>
