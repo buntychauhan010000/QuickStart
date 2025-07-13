@@ -17,7 +17,7 @@ import Faqs from "./components/Faqs";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ScrollToTopButton from "./components/ScrollToTopButton";
+import ScrollToTopButton from "./components/common/ScrollToTopButton";
 import FullScreenLoader from "./components/common/FullScreenLoader";
 
 function App() {
@@ -54,7 +54,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      {/* <ScrollToTopButton /> */}
+      <ScrollToTopButton />
     </>
   );
 }
