@@ -34,7 +34,7 @@ function Corporis() {
             </p>
             <PrimaryButton
               label="Learn More"
-              className="bg-primary text-white py-2 px-6 rounded-lg text-xs sm:text-base"
+              className=" rounded-lg"
             />
           </article>
         </div>

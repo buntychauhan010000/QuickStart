@@ -3,6 +3,7 @@ import logo from "../assets/img/logo.png";
 import { HiMenu, HiX } from "react-icons/hi";
 import PrimaryButton from "./PrimaryButton";
 import { navlinks } from "./common/helper";
+import NavItems from "./common/NavItems";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,20 +52,10 @@ function NavBar() {
 
             {/* Desktop Nav */}
             <ul className="hidden xl:flex gap-7 items-center">
-              {navlinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-secondary hover:text-primary transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+              <NavItems links={navlinks} onClick={handleLinkClick} />
               <li>
                 <PrimaryButton
                   label="Get Started"
-                  className="bg-primary text-white py-2 px-6 rounded-full text-xs sm:text-base"
                 />
               </li>
             </ul>
@@ -74,7 +65,7 @@ function NavBar() {
               {!isOpen && (
                 <PrimaryButton
                   label="Get Started"
-                  className="hidden sm:flex bg-primary text-white py-2 px-6 rounded-full text-xs sm:text-base"
+                  className="hidden sm:flex"
                 />
               )}
               <button onClick={toggleMenu}>
@@ -90,17 +81,7 @@ function NavBar() {
         <div className="fixed inset-0 z-40 bg-gray-300 bg-opacity-20 flex justify-center items-start pt-28 ">
           <div className="bg-white w-full max-w-4/5 rounded-lg shadow-lg p-8 flex flex-col">
             <ul className="flex flex-col gap-6 text-lg items-start">
-              {navlinks.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="hover:text-primary"
-                    onClick={handleLinkClick}
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
+              <NavItems links={navlinks} onClick={handleLinkClick} />
               <li>
                 <PrimaryButton label="Get Started" onClick={handleLinkClick} />
               </li>

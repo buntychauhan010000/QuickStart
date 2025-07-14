@@ -1,10 +1,10 @@
 import React from "react";
-import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { FaArrowRight } from "react-icons/fa6";
 import Unleashing1 from "../assets/img/Unleashing1.jpg";
 import Unleashing2 from "../assets/img/Unleashing2.jpg";
 import Unleashing3 from "../assets/img/Unleashing3.jpg";
 import "aos/dist/aos.css";
+import UnleashingItems from "./common/UnleashingItems";
 
 function UnleashingPotential() {
   return (
@@ -27,20 +27,7 @@ function UnleashingPotential() {
           </p>
 
           {/* Bullet Points */}
-          <ul className="md:space-y-1 lg:space-y-3 text-base md:text-sm lg:text-base">
-            {[
-              "Ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-              "Duis aute irure dolor in reprehenderit in voluptate velit.",
-              "Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.",
-            ].map((text, index) => (
-              <li key={index} className="flex items-start gap-2">
-                <span>
-                  <IoIosCheckmarkCircleOutline className="text-primary text-2xl" />
-                </span>
-                <span className="text-gray-700 line-clamp-2">{text}</span>
-              </li>
-            ))}
-          </ul>
+         <UnleashingItems/>
 
           {/* Read More Button */}
           <button className="flex items-center gap-2 font-nunito mx-auto sm:mx-0 bg-primary text-white text-sm sm:text-base px-3 lg:px-5 py-2 lg:py-3 rounded-lg hover:bg-[#2e6f8c] transition-colors duration-300">
