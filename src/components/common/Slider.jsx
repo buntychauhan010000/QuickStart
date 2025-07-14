@@ -49,7 +49,7 @@ function Slider() {
               key={index}
               className="h-full"
             >
-              <article className="bg-white shadow-card px-6 py-8 sm:px-8 mb-10 md:px-10 rounded-lg min-h-[420px] sm:min-h-[450px] flex flex-col items-center text-center transition duration-300 ease-in-out">
+              <article className="bg-white shadow-card px-6 py-8 sm:px-8 mb-10 md:px-10 rounded-lg min-h-[420px] sm:min-h-[450px] flex flex-col items-center justify-between text-center transition duration-300 ease-in-out">
                 {/* ⭐ Rating */}
                 <div className="flex items-center justify-center gap-1 text-amber-400 text-xl mb-4">
                   {[...Array(5)].map((_, i) => (

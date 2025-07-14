@@ -23,14 +23,19 @@ html {
 }
 
 @theme {
+  /* color class */
   --color-primary: #388da8;
   --color-primary-lite: #388ea810;
   --color-secondary: #3e5055;
   --color-secondary-lite: #3e5055ce;
   --color-primary-text: #0dcaf0;
-
+  /* shadow class */
   --shadow-card: 0 3px 15px rgba(0, 0, 0, 0.1);
+  /* font class */
   --font-roboto: "Roboto";
+  /* width class */
+  --maxWidth-costom-400:400px;
+  
 }
 
 .font-nunito {

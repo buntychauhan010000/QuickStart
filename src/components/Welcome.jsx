@@ -10,7 +10,7 @@ function Welcome() {
           {/* Heading */}
           <h1
             data-aos="fade-up"
-            className="text-2xl sm:text-5xl  font-nunito font-bold text-secondary"
+            className="text-2xl sm:text-4xl md:text-5xl  font-nunito font-bold text-secondary"
           >
             Welcome to <span className="text-primary">QuickStart</span>
           </h1>
@@ -18,7 +18,7 @@ function Welcome() {
           {/* Subheading */}
           <p
             data-aos="fade-up"
-            className="text-secondary-lite mt-3 mb-6 text-base sm:text-xl"
+            className="text-secondary-lite mt-3 mb-6 text-base sm:text-lg md:text-xl "
           >
             Quickly start your project now and set the stage for success
           </p>
@@ -46,7 +46,7 @@ function Welcome() {
           {/* Hero Image */}
           <img
             data-aos="zoom-out"
-            className=" w-4/5 md:w-3/5 lg:w-1/2 xl:w-3/5  mx-auto mt-8"
+            className=" w-4/5 sm:w-3/5 md:w-3/5 lg:w-1/2 xl:w-3/5  mx-auto mt-8"
             src={hero}
             alt="Hero section visual"
           />

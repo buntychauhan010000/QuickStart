@@ -15,12 +15,12 @@ function Testimonials() {
         </h2>
         <div
           data-aos="fade-up"
-          data-aos-delay="1530"
+          data-aos-delay="120"
           className="w-12 h-1 bg-primary mx-auto my-3"
         />
         <p
           data-aos="fade-up"
-          data-aos-delay="1560"
+          data-aos-delay="130 "
           className="text-center text-secondary mb-8 lg:mb-10"
         >
           Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
@@ -29,7 +29,7 @@ function Testimonials() {
 
         {/* Swiper Slider Component */}
       </div>
-      <div className="px-10">
+      <div className="px-10 lg:px-40">
         <Slider />
       </div>
     </div>

@@ -29,10 +29,10 @@ const Footer = () => {
   return (
     <footer className="bg-primary-lite text-gray-700 py-10 px-6 md:px-20">
       <div className="container mx-auto">
-        {/* Footer Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3  lg:gap-0">
-          {/* QuickStart Logo & Contact Info - Always on Top on Small Devices */}
-          <div className="md:col-span-3 lg:col-span-1 w-full order-1 lg:order-none">
+        {/* GRID PARENT */}
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-4">
+          {/* 🔹 Row 1 - QuickStart (on top for sm/md, leftmost for lg) */}
+          <div className="order-1 lg:order-none">
             <h2 className="text-3xl font-bold font-nunito mb-5">QuickStart</h2>
             <p className="text-sm font-nunito">A108 Adam Street</p>
             <p className="text-sm font-nunito mt-1">New York, NY 535022</p>
@@ -50,32 +50,35 @@ const Footer = () => {
             </p>
 
             <div className="flex space-x-3 mt-4">
-              {[
-                { Icon: BsTwitterX, label: "Twitter" },
-                { Icon: FaFacebook, label: "Facebook" },
-                { Icon: FaInstagram, label: "Instagram" },
-                { Icon: FaLinkedin, label: "LinkedIn" },
-              ].map(({ Icon, label }, idx) => (
-                <a
-                  key={idx}
-                  href="#"
-                  aria-label={label}
-                  className="p-2 border rounded-full text-gray-500 hover:text-primary hover:border-primary transition-colors"
-                >
-                  <Icon />
-                </a>
-              ))}
+              {[BsTwitterX, FaFacebook, FaInstagram, FaLinkedin].map(
+                (Icon, idx) => (
+                  <a
+                    key={idx}
+                    href="#"
+                    className="p-2 border rounded-full text-gray-500 hover:text-primary hover:border-primary transition-colors"
+                  >
+                    <Icon />
+                  </a>
+                )
+              )}
             </div>
           </div>
 
-          {/* Other Footer Sections */}
-          {footerLinks.map((section, index) => (
-            <div key={index} className="order-2">
+          {/* 🔸 Row 2 - Links & Services in nested grid */}
+          <div className="order-2 lg:order-none lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+            {/* Useful Links */}
+            <div>
               <h3 className="text-lg font-semibold font-nunito mb-4">
-                {section.title}
+                Useful Links
               </h3>
               <ul className="space-y-2">
-                {section.links.map((link, idx) => (
+                {[
+                  "Home",
+                  "About us",
+                  "Services",
+                  "Terms of service",
+                  "Privacy policy",
+                ].map((link, idx) => (
                   <li key={idx}>
                     <a href="#" className="text-sm hover:text-primary">
                       {link}
@@ -84,10 +87,32 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-          ))}
 
-          {/* Newsletter Section */}
-          <div className="order-4 md:col-span-2 lg:col-span-1">
+            {/* Our Services */}
+            <div>
+              <h3 className="text-lg font-semibold font-nunito mb-4">
+                Our Services
+              </h3>
+              <ul className="space-y-2">
+                {[
+                  "Web Design",
+                  "Web Development",
+                  "Product Management",
+                  "Marketing",
+                  "Graphic Design",
+                ].map((link, idx) => (
+                  <li key={idx}>
+                    <a href="#" className="text-sm hover:text-primary">
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* 🔸 Row 3 - Newsletter (bottom for sm/md, rightmost for lg) */}
+          <div className="order-3 lg:order-none">
             <h3 className="text-lg font-semibold font-nunito mb-4">
               Our Newsletter
             </h3>
@@ -103,7 +128,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-primary text-white px-4 py-2 rounded-full sm:rounded-l-none  sm:rounded-r-full hover:bg-opacity-90 transition"
+                className="bg-primary text-white px-4 py-2 rounded-full sm:rounded-l-none sm:rounded-r-full hover:bg-opacity-90 transition"
               >
                 Subscribe
               </button>
@@ -113,7 +138,7 @@ const Footer = () => {
 
         {/* Divider & Copyright */}
         <hr className="my-6 border-gray-300" />
-        <p className="text-center text-sm font-nunito ">
+        <p className="text-center text-sm font-nunito">
           © <strong>QuickStartAll</strong> | All Rights Reserved <br />
           Designed by <span className="text-primary">BootstrapMade</span>
         </p>

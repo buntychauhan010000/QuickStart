@@ -22,7 +22,7 @@ function Contact() {
         <div
           data-aos="fade-up"
           data-aos-delay="100"
-          className="w-4/5 mx-auto md:w-1/2 shadow-card shadow-gray-300 px-5 py-8 my-4 lg:my-0 flex flex-col gap-4 items-center"
+          className="w-4/5 sm:w-full mx-auto md:w-1/2 shadow-card shadow-gray-300 px-5 py-8 my-4 lg:my-0 flex flex-col gap-4 items-center"
         >
           <span className="border-dashed border-2 border-primary p-3 md:p-3 lg:p-5 w-fit rounded-full">
             <BsGeoAlt className="text-primary text-2xl" />
@@ -86,7 +86,7 @@ function Contact() {
         className="flex gap-5 justify-between items-center flex-col md:flex-row mt-10"
       >
         {/* Google Map */}
-        <div className="w-4/5 mx-auto md:w-1/2 shadow-card shadow-gray-300">
+        <div className="w-4/5  mx-auto md:w-1/2 shadow-card shadow-gray-300">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48399.333548272545!2d-74.034119!3d40.696915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown.%20Conference%20Center!5e0!3m2!1sen!2sus!4v1752145529770!5m2!1sen!2sus"
             width="100%"
