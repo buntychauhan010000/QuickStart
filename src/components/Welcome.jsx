@@ -27,7 +27,7 @@ function Welcome() {
           <div data-aos="fade-up" className="flex justify-center gap-5">
             <PrimaryButton
               label={"Get Started"}
-              className="bg-primary text-white text-base font-nunito font-bold py-1 px-4 sm:py-2.5 sm:px-7 rounded-full"
+              className="bg-primary text-white text-base font-nunito  py-1 px-4 sm:py-2.5 sm:px-7 rounded-full"
             />
 
             <a
